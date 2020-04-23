@@ -25,9 +25,18 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SumButton_Click(object sender, RoutedEventArgs e)
         {
             sumTextBox.Text = $"{ClassLibrary1.Class1.AddMethod(addendTextBox1.Text, addendTextBox2.Text)}";
+            resetButton.IsEnabled = true;
+        }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            addendTextBox1.Text = "";
+            addendTextBox2.Text = "";
+            sumTextBox.Text = "";
+            resetButton.IsEnabled = false;
         }
     }
 }
