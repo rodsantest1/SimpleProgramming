@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d" FontSize="18"
+        mc:Ignorable="d" FontSize="36"
         Title="MainWindow" Height="450" Width="800">
     <Border Padding="10">
         <StackPanel>
@@ -23,13 +23,16 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <TextBlock Text="Let's add a couple of numbers" Margin="0,0,0,10"
-                           Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" FontSize="24" />
-                <TextBox x:Name="addendTextBox1" Grid.Row="1" Grid.Column="0" Width="50" Margin="5,0,5,0" />
-                <TextBlock Text="+" Grid.Row="1" Grid.Column="1" TextAlignment="Center" Margin="5,0,5,0" />
-                <TextBox x:Name="addendTextBox2" Grid.Row="1" Grid.Column="2" Width="50" Margin="5,0,5,0" />
-                <Button Content="=" Grid.Row="1" Grid.Column="3" Width="50" Margin="5,0,5,0" Click="SumButton_Click" />
-                <TextBox x:Name="sumTextBox" Width="50" Grid.Row="1" Grid.Column="4" TextAlignment="Center" Margin="5,0,5,0" IsReadOnly="True"  />
-                <Button x:Name="resetButton" Content="C" Grid.Row="1" Grid.Column="5" Width="50" Margin="5,0,5,0" Click="ResetButton_Click" IsEnabled="False" />
+                           Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" FontSize="48" />
+                <TextBox x:Name="addendTextBox1" Grid.Row="1" Grid.Column="0"  Margin="7,0,7,0"
+                         TextAlignment="Center" Width="77"/>
+                <TextBlock Text="+" Grid.Row="1" Grid.Column="1" TextAlignment="Center" />
+                <TextBox x:Name="addendTextBox2" Grid.Row="1" Grid.Column="2"  Margin="7,0,7,0" 
+                         TextAlignment="Center" VerticalAlignment="Center" Width="77"/>
+                <Button Content="="  VerticalAlignment="Center" HorizontalAlignment="Center"  
+                        Grid.Row="1" Grid.Column="3" Width="47"  Margin="7,0,7,0" Click="SumButton_Click" />
+                <TextBox x:Name="sumTextBox" Width="77"  Grid.Row="1" Grid.Column="4" TextAlignment="Center" Margin="7,0,7,0" IsReadOnly="True"  />
+                <Button x:Name="resetButton" Width="47" Content="C" Grid.Row="1" Grid.Column="5"  Margin="7,0,7,0" Click="ResetButton_Click" IsEnabled="False" />
             </Grid>
         </StackPanel>
     </Border>
