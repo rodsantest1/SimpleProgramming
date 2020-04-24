@@ -41,8 +41,8 @@ namespace WpfApp1
 
         private void AddendTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            sumButton.IsEnabled = 
-                !string.IsNullOrWhiteSpace(addendTextBox1.Text) && 
+            sumButton.IsEnabled =
+                !string.IsNullOrWhiteSpace(addendTextBox1.Text) &&
                 !string.IsNullOrWhiteSpace(addendTextBox2.Text);
         }
     }
