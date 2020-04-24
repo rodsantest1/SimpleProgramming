@@ -12,7 +12,7 @@ This program adds 2 numbers and displays the sum.
 
 **1 Class Library**  
 .Net Standard 2   
-**Test Project**
+**Test Project**  
 Appium Test  
 Unit Test  
 
