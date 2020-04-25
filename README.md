@@ -16,3 +16,6 @@ This program adds 2 numbers and displays the sum.
 Appium Test  
 Unit Test  
 
+## Test Automation Instructions   
+1. Install WindowsApplicationDriver.msi (included)  
+2. Changed Windows to Developer Mode by going to start and typing Developer  
